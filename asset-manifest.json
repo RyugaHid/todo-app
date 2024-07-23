@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/react-gh-pages/static/js/main.b876b367.js",
-    "index.html": "/react-gh-pages/index.html",
-    "main.b876b367.js.map": "/react-gh-pages/static/js/main.b876b367.js.map"
+    "main.js": "/toto-app/static/js/main.bdc2b92d.js",
+    "index.html": "/toto-app/index.html",
+    "main.bdc2b92d.js.map": "/toto-app/static/js/main.bdc2b92d.js.map"
   },
   "entrypoints": [
-    "static/js/main.b876b367.js"
+    "static/js/main.bdc2b92d.js"
   ]
 }
