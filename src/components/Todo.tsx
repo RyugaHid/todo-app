@@ -18,6 +18,12 @@ const StyledActionRow = styled.div`
     gap: 30px;
     width: 100%;
 `;
+const StyledText = styled.p`
+    width: 600px;
+    overflow-wrap: break-word;
+    padding: 0 0px 0 42px;
+    text-align: start;
+`;
 
 const Todo: React.FC<
     TodoType & {
@@ -54,7 +60,7 @@ const Todo: React.FC<
                 ) : (
                     <>
                         <Checkbox checked={completed} onClick={() => toggleTodo(id)} sx={{ m: 0, p: 0 }} />
-                        <p>{inputValue}</p>
+                        <StyledText>{inputValue}</StyledText>
                     </>
                 )}
             </StyledActionRow>
