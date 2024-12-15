@@ -26,6 +26,7 @@ const todosSlice = createSlice({
     name: 'todos',
     initialState: {
         todos: loadTodosFromLocalStorage(),
+        filter: 'all',
     },
     reducers: {
         addTodo: (state, action: PayloadAction<TodoType>) => {
@@ -51,14 +52,17 @@ const todosSlice = createSlice({
         },
         showAll: state => {
             state.todos = loadTodosFromLocalStorage();
+            state.filter = 'all';
         },
         showActive: state => {
             state.todos = loadTodosFromLocalStorage();
             state.todos = state.todos.filter(todo => !todo.completed);
+            state.filter = 'active';
         },
         showCompleted: state => {
             state.todos = loadTodosFromLocalStorage();
             state.todos = state.todos.filter(todo => todo.completed);
+            state.filter = 'completed';
         },
     },
 });
